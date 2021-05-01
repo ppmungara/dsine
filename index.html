@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="./assets/logo-white.svg" />
+    <title>Dsine.io</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container flex">
+            <a href="./index.html">
+                <div class="logo-wrapper flex">
+                    <img src="./assets/logo.svg" width="7rem" height="5rem" />
+                    <h1 class="logo-text">Dsine.io</h1>
+                </div>
+            </a>
+            <ul class="menu flex">
+                <li class="menu-item"><a href="#">Home</a></li>
+                <!-- <li class="menu-item"><a href="#about">About</a></li> -->
+                <li class="menu-item"><a href="#skills">Skills</a></li>
+                <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger-wrapper">
+                <div class="hamburger flex-column">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <ul class="menu flex-column">
+                    <a href="index.html">
+                        <li class="menu-item flex">Home</li>
+                    </a>
+                    <!-- <a href="#about"><li class="menu-item flex">About</li></a> -->
+                    <a href="#skills">
+                        <li class="menu-item flex">Skills</li>
+                    </a>
+                    <a href="#portfolio">
+                        <li class="menu-item flex">Portfolio</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="menu-item flex">Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="hero container flex-column">
+            <p class="hero-text">
+                Scientist turned
+            </p>
+            <p class="hero-bold">Developer</p>
+        </div>
+    </section>
+
+    <section id="about" class="about flex">
+        <div class="container flex-column">
+            <p class="about-me-text">
+                Nice to <br> meet you
+            </p>
+            <p class="send-message"><a href="#contact">Send me a message.</a></p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills flex-column">
+        <p class="skills-heading">Skills</p>
+        <div class="container flex">
+            <div class="card flex-column">
+                <img src="./assets/html5-brands.svg" alt="html5 logo">
+                <p>HTML5</p>
+            </div>
+            <div class="card flex-column">
+                <img src="./assets/css3-alt-brands.svg" alt="css3 logo">
+                <p>CSS3</p>
+            </div>
+            <div class="card flex-column">
+                <img src="./assets/sass-brands.svg" alt="sass logo">
+                <p>SASS</p>
+            </div>
+            <div class="card flex-column">
+                <img src="./assets/js-brands.svg" alt="javascript logo">
+                <p>JavaScript</p>
+            </div>
+            <div class="card flex-column">
+                <img src="./assets/react-brands.svg" alt="react logo">
+                <p>React</p>
+            </div>
+            <div class="card flex-column">
+                <img src="./assets/redux.svg" alt="redux logo">
+                <p>Redux</p>
+            </div>
+            <div class="card flex-column">
+                <img src="./assets/python.svg" alt="python logo">
+                <p>Python</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio flex-column">
+        <p class="portfolio-heading">Portfolio</p>
+        <div class="container flex-column">
+            <div class="btns flex">
+                <button id="plugnchug-desktop"> Desktop </button>
+                <button id="plugnchug-mobile"> Mobile </button>
+            </div>
+            <p class="plugnchug-stack">React, Redux, Firebase</p>
+            <div class="iframe flex">
+                <iframe id="plugnchug-iframe" src="https://plugnchug.netlify.app" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact flex-column">
+        <p class="contact-heading">Contact Me</p>
+        <div class="container">
+            <form method="POST" class="flex-column">
+                <div class="form-control flex-column">
+                    <label for="name">Name*</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe">
+                </div>
+                <div id="email-form-control" class="form-control flex-column">
+                    <label for="email">Email*</label>
+                    <input type="text" name="email" id="email" placeholder="john@gmail.com">
+                    <p class="emailInvalid"></p>
+                </div>
+                <div class="form-control flex-column">
+                    <label for="message">Message*</label>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                </div>
+                <div class="form-control-button flex">
+                    <button id="contact-submit" type="submit"> Submit </button>
+                </div>
+                <p class="thank-contact"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="flex">
+        <div class="container flex">
+            <p class="copyright">&#169 2021 Dsine.io</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
